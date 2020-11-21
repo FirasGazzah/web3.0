@@ -1,0 +1,137 @@
+<!-- header-bottom-->
+<div class="header-bot">
+  <div class="container">
+    <div class="row header-bot_inner_wthreeinfo_header_mid">
+
+      <div class="col-md-2">
+      <nav class="navbar navbar-expand-lg">
+            <div class="agileits-navi_search">
+              <form action="#" method="post">
+                <select name="agileinfo_search" class="border" required="" (change)="cat($event)">
+                  <option value="">All Categories</option>
+                  <option value="History">History</option>
+                  <option value="arts">Arts</option>
+                  <option value="language">Language</option>
+                  <option value="religion">Religion</option>
+                  <option value="science">Science</option>
+                  <option value="technology">Technology</option>
+                  <option value="philosophy">Philosophy</option>
+                  <option value="systems">Systems</option>
+                </select>
+              </form>
+            </div>
+          </nav>
+      </div>
+      <div class="col-md-2">
+      <nav class="navbar navbar-expand-lg">
+        <div class="agileits-navi_search">
+          <form action="#" method="post">
+            <select  name="agileinfo_search" class="border" required="" (change)="byAuth($event)">
+              <option value="">All Authors</option>
+              <option [value]="auth.name" *ngFor="let auth of allAuthors">{{auth.name}}</option>
+
+            </select>
+          </form>
+        </div>
+      </nav>
+      </div>
+      <div class="col-md-5">
+        <div class="row">
+          <!-- search -->
+          <div class="col-10 agileits_search">
+            <form class="form-inline" action="#" method="post">
+              <input class="form-control mr-sm-2" type="search" [(ngModel)]="search" (keyup)="doSearch($event)"  placeholder="Search" aria-label="Search" required>
+              <button class="btn my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+          <!-- //search -->
+        </div>
+      </div>
+      <div class="col-md-3">
+        <!-- price filter start here -->
+        <div class="collection-collapse-block border-0" [class.open]="collapse">
+          <div class="collection-collapse-block-content">
+            <div class="collection-brand-filter">
+              <div class="mt-2">
+                <ng5-slider
+                  [(value)]="min"
+                  [(highValue)]="max"
+                  [options]="options"
+                  (userChangeEnd)="appliedFilter($event)">
+                </ng5-slider>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- shop locator (popup) -->
+<!-- //header-bottom -->
+
+<!-- top Products -->
+<div class="ads-grid py-sm-5 py-4">
+  <div class="container py-xl-4 py-lg-2">
+    <!-- tittle heading -->
+    <h3 class="tittle-w3l text-center mb-lg-5 mb-sm-4 mb-3">
+      <span>B</span>ooks
+      <span>&</span>
+      <span>M</span>ore</h3>
+    <!-- //tittle heading -->
+    <div class="row">
+      <!-- product left -->
+      <div class="agileinfo-ads-display col-lg-12">
+        <div class="wrapper">
+          <!-- first section -->
+          <div class="product-sec1 px-sm-4 px-3 py-sm-5  py-3 mb-4">
+            <div class="row">
+              <div *ngFor="let book of allbooks"  class="col-md-4 product-men">
+                <div class="men-pro-item simpleCart_shelfItem">
+                  <div class="men-thumb-item text-center">
+                    <img [src]="'../../assets/' + book.bool + '.jpg'" alt="">
+                    <div class="men-cart-pro">
+                      <div class="inner-men-cart-pro">
+                        <a href="single.html" class="link-product-add-cart">Quick View</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-info-product text-center border-top mt-4">
+                    <h4 class="pt-1">
+                      <a href="single.html">{{book.bool}}</a>
+
+                    </h4>
+                    <div class="info-product-price my-2">
+                      <span class="item_price">{{book.price | currency}}</span>
+                    </div>
+                    <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                      <form action="#" method="post">
+                        <fieldset>
+                          <input type="hidden" name="cmd" value="_cart" />
+                          <input type="hidden" name="add" value="1" />
+                          <input type="hidden" name="business" value=" " />
+                          <input type="hidden" name="item_name" value="Samsung Galaxy J7" />
+                          <input type="hidden" name="amount" value="200.00" />
+                          <input type="hidden" name="discount_amount" value="1.00" />
+                          <input type="hidden" name="currency_code" value="USD" />
+                          <input type="hidden" name="return" value=" " />
+                          <input type="hidden" name="cancel_return" value=" " />
+                          <input type="submit" name="submit" [value]="'ecrit par ' + book.name" class="button btn" />
+                        </fieldset>
+                      </form>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- //first section -->
+        </div>
+      </div>
+      <!-- //product left -->
+    </div>
+  </div>
+</div>
+<!-- //top products -->

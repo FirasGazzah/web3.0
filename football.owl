@@ -1,0 +1,615 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#"
+     xml:base="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#is_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#is_a">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Cup"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#plays_for -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#plays_for">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#work_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#work_in"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Player"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#capacite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#capacite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Stade"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#agent"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#nationnalité -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#nationnalité">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Player"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#nom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#nom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Player"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#prenom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#prenom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Player"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#teamName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#teamName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Team"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Amical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Amical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Match"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Awards -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Awards"/>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Away_competitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Away_competitor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Competitors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Competition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Competition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Competition_name -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Competition_name">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Competition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Competition_stage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Competition_stage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Competition_name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Competitors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Competitors"/>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Cup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Cup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Officiel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Defender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Defender">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Division -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Division"/>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Free_Kick -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Free_Kick">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Goals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Goalkeeper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Goalkeeper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Goals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Goals"/>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Header -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Header">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Goals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Home_Competitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Home_Competitor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Competitors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#League -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#League">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Officiel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Match -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Match"/>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Midfielder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Midfielder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Officiel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Officiel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Match"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Overhead_kick -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Overhead_kick">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Goals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Penalty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Penalty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Goals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Player"/>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Position -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Position">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Division"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Promoted_to -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Promoted_to">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Division"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Relegated_to -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Relegated_to">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Division"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Stade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Stade"/>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Striker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Striker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Team"/>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#agent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#man_of_the_match -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#man_of_the_match">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Awards"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Alaba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Alaba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Defender"/>
+        <plays_for rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Bayern"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</age>
+        <nom>Alaba</nom>
+        <prenom>david</prenom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Badrane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Badrane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Defender"/>
+        <plays_for rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Esperance"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</age>
+        <nationnalité>Algerian</nationnalité>
+        <nom>Badrane</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Barcelone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Barcelone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Team"/>
+        <teamName>Barcelone</teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Bayern -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Bayern">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Team"/>
+        <teamName>Bayern</teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Ben_Chrifia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Ben_Chrifia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Goalkeeper"/>
+        <plays_for rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Esperance"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</age>
+        <nationnalité>Tunisian</nationnalité>
+        <nom>Ben Chrifia</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Buffon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Buffon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Goalkeeper"/>
+        <plays_for rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Juventus"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</age>
+        <nationnalité>Italian</nationnalité>
+        <nom>Buffon</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Busquets -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Busquets">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Midfielder"/>
+        <plays_for rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Esperance"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</age>
+        <nationnalité>Spanish</nationnalité>
+        <nom>Busquets</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Chaalali -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Chaalali">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Midfielder"/>
+        <plays_for rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Esperance"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</age>
+        <nationnalité>Tunisian</nationnalité>
+        <nom>Chalaali</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Esperance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Esperance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Team"/>
+        <teamName>Esperance</teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Hummels -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Hummels">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Defender"/>
+        <plays_for rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Bayern"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</age>
+        <nationnalité>German</nationnalité>
+        <nom>Hummels</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Juventus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Juventus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Team"/>
+        <teamName>Juventus</teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Khenissi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Khenissi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Striker"/>
+        <plays_for rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Esperance"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</age>
+        <nationnalité>Tunisian</nationnalité>
+        <nom>Khenissi</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Kimmich -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Kimmich">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Midfielder"/>
+        <plays_for rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Bayern"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</age>
+        <nationnalité>Tunisian</nationnalité>
+        <nom>Kimmich</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Lewandowski -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Lewandowski">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Striker"/>
+        <plays_for rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Bayern"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</age>
+        <nationnalité>Polska</nationnalité>
+        <nom>Lewandowski</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Neuer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Neuer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Goalkeeper"/>
+        <plays_for rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Bayern"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</age>
+        <nationnalité>German</nationnalité>
+        <nom>Neuer</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Ouattara -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Ouattara">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Striker"/>
+        <plays_for rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Esperance"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</age>
+        <nationnalité>Ivoirien</nationnalité>
+        <nom>Ouattara</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Sampadoria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Sampadoria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Team"/>
+        <teamName>Sampadoria</teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Suarez -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Suarez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Striker"/>
+        <plays_for rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Barcelone"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</age>
+        <nationnalité>Uruguay</nationnalité>
+        <nom>Suarez</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Xavi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Xavi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Midfielder"/>
+        <plays_for rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Barcelone"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</age>
+        <nationnalité>Spanish</nationnalité>
+        <nom>Xavi</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Yakouuubi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Yakouuubi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Defender"/>
+        <plays_for rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Esperance"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</age>
+        <nationnalité>Tunisian</nationnalité>
+        <nom>Ya39oubii</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Yushida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Yushida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Defender"/>
+        <plays_for rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Sampadoria"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</age>
+        <nationnalité>Japanese</nationnalité>
+        <nom>Yushida</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#rades -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#rades">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#Stade"/>
+        <capacite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60000</capacite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#touhemi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#touhemi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#agent"/>
+        <work_in rdf:resource="http://www.semanticweb.org/planettech/ontologies/2018/11/untitled-ontology-14#rades"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
