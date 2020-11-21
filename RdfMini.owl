@@ -1,0 +1,453 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-4="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Audio -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Audio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#deType"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#format"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#PDF -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#PDF">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#deType"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#format"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#aEcrit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#aEcrit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#author"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#deType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#deType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#format"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#ecritPar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#ecritPar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Lieu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Lieu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#author_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#author_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book_number -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book_number">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book_title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book_title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#hasAge">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#hasPages -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#hasPages">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#hasPrice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#hasPrice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Computer_programming_programs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Computer_programming_programs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#computer_Sience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#History -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#History">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Library -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Library"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#arts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#arts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#author -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#author">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Library"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Library"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#computer_Sience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#computer_Sience">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Library"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#data_processing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#data_processing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#computer_Sience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#format -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#format">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Library"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#language">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#mathematics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#mathematics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#philosophy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#philosophy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#publisher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#publisher">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Library"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#religion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#religion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#science -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#science">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#systems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#systems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#computer_Sience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#technology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#technology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#book"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Agatha_Christie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Agatha_Christie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#author"/>
+        <author_name>Agatha Christie</author_name>
+        <book_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85</book_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Barbara_Cartland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Barbara_Cartland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#author"/>
+        <author_name>Barbara Cartland</author_name>
+        <book_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">723</book_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Book_Hamlet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Book_Hamlet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#arts"/>
+        <ecritPar rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#William_Shakespeare"/>
+        <book_title>Hamlet</book_title>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1603</hasAge>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#float">250.0</hasPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Book_Ils_étaient_dix -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Book_Ils_étaient_dix">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#History"/>
+        <ecritPar rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Agatha_Christie"/>
+        <Lieu>Britan</Lieu>
+        <book_title>Ils étaient dix</book_title>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1939</hasAge>
+        <hasPages rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</hasPages>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</hasPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Book_King_Lear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Book_King_Lear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#History"/>
+        <ecritPar rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#William_Shakespeare"/>
+        <Lieu>Versailles</Lieu>
+        <book_title>King Lear</book_title>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1606</hasAge>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#float">36.0</hasPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Book_Murder_on_the_Orient_Express -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Book_Murder_on_the_Orient_Express">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#History"/>
+        <ecritPar rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Agatha_Christie"/>
+        <book_title>Murder on the Orient Express</book_title>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1920</hasAge>
+        <hasPages rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</hasPages>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#float">36.0</hasPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Book_Royal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Book_Royal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#mathematics"/>
+        <ecritPar rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Danielle_Steel"/>
+        <book_title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Royal</book_title>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2020</hasAge>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</hasPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Book_Un_rayon_de_lumière -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Book_Un_rayon_de_lumière">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#philosophy"/>
+        <ecritPar rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Danielle_Steel"/>
+        <book_title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Un rayon de lumière</book_title>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1998</hasAge>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</hasPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Danielle_Steel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Danielle_Steel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#author"/>
+        <author_name>Danielle Steel</author_name>
+        <book_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">179</book_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#William_Shakespeare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#William_Shakespeare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#author"/>
+        <author_name>William Shakespeare</author_name>
+        <book_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</book_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Book_Il_ne_nous_reste_que_l&apos;amour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Book_Il_ne_nous_reste_que_l&apos;amour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#systems"/>
+        <ecritPar rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Barbara_Cartland"/>
+        <book_title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Il ne nous reste que l&apos;amour</book_title>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1977</hasAge>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#float">150.0</hasPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Book_Le_Printemps_d&apos;Aurélia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Book_Le_Printemps_d&apos;Aurélia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#technology"/>
+        <ecritPar rdf:resource="http://www.semanticweb.org/gazzah/ontologies/2020/10/untitled-ontology-4#Barbara_Cartland"/>
+        <book_title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le Printemps d&apos;Aurélia</book_title>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1973</hasAge>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#float">525.0</hasPrice>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
